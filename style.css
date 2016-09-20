@@ -16,6 +16,9 @@ background: #29333E;
 background: #1B1F28;
 background: #464D57;
 
+Electric Blue - (135, 205, 255)
+
+
 LIGHTS / TEXT
 background: #3E3E41;
 background: #12F69C;
@@ -24,6 +27,9 @@ background: #92F52F;
 background: #6BA833;
 */
 
+/***** GLOBAL CLASSES *****/
+/**************************/
+
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,12 +37,98 @@ body {
   background-attachment: fixed;
 
   color: white;
+  font-family: 'Source Code Pro', monaco, monospace;
 }
 
+/* unvisited link */
+a:link {
+    color: #87cdff;
+}
+
+/* visited link */
+a:visited {
+    color: #87cdff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #87cdff;
+}
+
+/* selected link */
+a:active {
+    color: #87cdff;
+}
+
+.white-hr {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.heading-background-white {
+  background-color: white;
+}
+
+.color-accent-green {
+  color: #41f966;
+}
+
+.color-accent-peach {
+  color: #12f69c;
+}
+
+.color-accent-electric-blue {
+  color: #87cdff;
+}
+
+.color-accent-orange {
+  color: #6BA833;
+}
+
+.color-accent-yellow {
+  color: background: #92F52F;
+}
+
+.color-accent-grey {
+  color: #3e3e41;
+}
+
+.color-accent-white {
+  color: white;
+}
+
+
+/***** HEADER *************/
+/**************************/
+
 #header-background {
-  background-color: #1B1F28;
+  background-color: rgba(27, 31, 40, 0.5);
+}
+
+.logo {
+  padding: 20px;
 }
 
 .logo img {
-  width: 100%;
+  width: 100px;
+}
+
+.site-heading {
+  font-size: 8.0em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/***** POSTS *************/
+/**************************/
+
+.post-background {
+  background-color: rgba(62, 62, 65, 0.75);
+  padding: 10px;
+  border: 1px solid #867D80;
+  border-radius: 10px;
 }

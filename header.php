@@ -19,6 +19,10 @@
 
 		<!-- Link all external fonts here -->
 
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700,200' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
 		<!-- Link the main style.css here -->
 
 		<!-- Link additional CSS files here -->
@@ -48,7 +52,7 @@
 							<!-- /logo -->
 
 							<div class="col-xs-4">
-								<h1>FMTC</h1>
+								<h1 class="site-heading">FMTC</h1>
 							</div>
 
 
