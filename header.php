@@ -13,6 +13,9 @@
 
 
 		<!-- Link framework CSS files here -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/boilerplate.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/frameworks/bootstrap-3.3.7/css/bootstrap.min.css">
 
 		<!-- Link all external fonts here -->
 
@@ -27,28 +30,31 @@
 	</head>
 
 
-	<body <?php body_class(); ?>>
+	<body style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/background_image_alt.jpg');" <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
 
 			<!-- header -->
-			<header class="header clear" role="banner">
+			<header id="header-background">
 
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
+					<section id="header" class="container">
+						<div class="row">
 
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
+							<!-- logo -->
+							<div class="col-xs-4 logo">
+								<a href="<?php echo home_url(); ?>">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/logomark.png" alt="Logo">
+								</a>
+							</div>
+							<!-- /logo -->
+
+							<div class="col-xs-4">
+								<h1>FMTC</h1>
+							</div>
+
+
+
+						</div>
+					</section>
 
 			</header>
 			<!-- /header -->
