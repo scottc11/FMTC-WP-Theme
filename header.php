@@ -37,28 +37,4 @@
 	<body style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/background_image_alt.jpg');" <?php body_class(); ?>>
 
 
-			<!-- header -->
-			<header id="header-background">
-
-					<section id="header" class="container">
-						<div class="row">
-
-							<!-- logo -->
-							<div class="col-xs-4 logo">
-								<a href="<?php echo home_url(); ?>">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/logomark.png" alt="Logo">
-								</a>
-							</div>
-							<!-- /logo -->
-
-							<div class="col-xs-4">
-								<h1 class="site-heading">FMTC</h1>
-							</div>
-
-
-
-						</div>
-					</section>
-
-			</header>
-			<!-- /header -->
+			

@@ -91,7 +91,7 @@ a:active {
 }
 
 .color-accent-yellow {
-  color: background: #92F52F;
+  color: #92F52F;
 }
 
 .color-accent-grey {
@@ -106,8 +106,9 @@ a:active {
 /***** HEADER *************/
 /**************************/
 
-#header-background {
-  background-color: rgba(27, 31, 40, 0.5);
+#main-sidebar {
+  /*background-color: rgba(27, 31, 40, 0.5);*/
+  text-align: center;
 }
 
 .logo {
@@ -120,15 +121,72 @@ a:active {
 
 .site-heading {
   font-size: 8.0em;
+  margin: 10px 0 10px 0;
   font-family: 'Roboto Mono', monospace;
 }
 
-/***** POSTS *************/
-/**************************/
+/*--------------------------------------*/
+/*        SIDEBARS AND WIDGETS          */
+/*--------------------------------------*/
+
+.sidebar-widget {
+  text-align: right;
+}
+
+.sidebar-widget div h3 {
+  display: inline-block;
+  background-color: black;
+  color: #92f52f;
+}
+
+.sidebar-widget div ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.sidebar-widget div ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+
+}
+
+.sidebar-widget div ul li a {
+  color: #87cdff;
+}
+
+.search-input {
+  width: auto;
+  border: none;
+  background-color: #fef1f1;
+  padding: 5px;
+}
+
+.search-submit {
+  width: auto;
+  /*padding: 10px 20px 10px 20px;*/
+
+  border: none;
+  color: black;
+  font-weight: normal;
+  background-color: #92f52f;
+}
+
+.widget_archive ul li {
+  display: inline-block;
+}
+
+.widget_categories ul li {
+  display: inline-block;
+}
+
+/*--------------------------------------*/
+/*              POSTS                   */
+/*--------------------------------------*/
 
 .post-background {
   background-color: rgba(62, 62, 65, 0.75);
   padding: 10px;
-  border: 1px solid #867D80;
-  border-radius: 10px;
+  border-radius: 5px;
 }
