@@ -40,6 +40,17 @@ body {
   font-family: 'Source Code Pro', monaco, monospace;
 }
 
+/*DEFAULT CSS CLASSES FOR WORDPRESS IMAGES in POSTS*/
+/*-------------------------------------------------*/
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+/*-------------------------------------------------*/
+
+
 /* unvisited link */
 a:link {
     color: #87cdff;
@@ -106,8 +117,9 @@ a:active {
   margin-top: 20px;
 }
 
-/***** HEADER *************/
-/**************************/
+/*--------------------------------------*/
+/*        HEADER                        */
+/*--------------------------------------*/
 
 #main-sidebar {
   /*background-color: rgba(27, 31, 40, 0.5);*/
@@ -208,7 +220,27 @@ a:active {
   /*background-attachment: fixed;*/
 }
 
+.single-post-header {
+
+}
+
+.single-post-details {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .article-background {
   background-color: rgba(62, 62, 65, 0.75);
   /*padding: 0;*/
+}
+
+.post-content {
+  /*background-color: rgba(62, 62, 62, 0.5);*/
+}
+
+.post-content p img {
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
 }

@@ -33,15 +33,18 @@
 
 					<div class="row">
 						<!-- post title -->
-						<h1 class="col-xs-12">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-						</h1>
+						<div class="col-xs-12">
+							<h1 class="single-post-header">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+							</h1>
+
+						</div>
 						<!-- /post title -->
 
-						<!-- <hr class="white-hr"> -->
+
 
 						<!-- post details -->
-						<div class="col-xs-12">
+						<div class="single-post-details col-xs-12">
 							<span class="date">
 								<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
 									<?php the_date(); ?> <?php the_time(); ?>
@@ -51,6 +54,8 @@
 							<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
 						</div>
 						<!-- /post details -->
+
+						<hr class="white-hr">
 					</div>
 
 
@@ -60,7 +65,7 @@
 					<!-- ~~~~~~~~~~~~~~~~~~~ -->
 
 					<div class="row">
-						<div class="col-xs-12">
+						<div class="post-content col-xs-12">
 							<?php the_content(); // Dynamic Content ?>
 
 							<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
