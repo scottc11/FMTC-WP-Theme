@@ -24,7 +24,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
 		<!-- Link the main style.css here -->
-
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/comments.css">
 		<!-- Link additional CSS files here -->
 
 
