@@ -34,7 +34,4 @@
 	</head>
 
 
-	<body style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/background_image_alt.jpg');" <?php body_class(); ?>>
-
-
-			
+	<body <?php body_class(); ?>>

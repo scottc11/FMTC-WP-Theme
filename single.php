@@ -7,8 +7,13 @@
 
 		<div class="col-xs-4">
 
-			<?php get_template_part('main-sidebar'); ?>
-			<?php get_sidebar(); ?>
+			<div class="">
+				<?php get_template_part('main-sidebar'); ?>
+			</div>
+
+			<div class="sidebar-menu">
+				<?php get_sidebar(); ?>
+			</div>
 
 		</div>
 
@@ -34,9 +39,21 @@
 					<div class="row">
 						<!-- post title -->
 						<div class="col-xs-12">
-							<h1 class="single-post-header">
-								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-							</h1>
+							<div class="single-post-header">
+								<h1>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+								</h1>
+
+
+								<span class="date">
+									<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
+										<?php the_date(); ?> <?php the_time(); ?>
+									</time>
+								</span>
+								<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+								<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+
+							</div>
 
 						</div>
 						<!-- /post title -->
@@ -45,17 +62,11 @@
 
 						<!-- post details -->
 						<div class="single-post-details col-xs-12">
-							<span class="date">
-								<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-									<?php the_date(); ?> <?php the_time(); ?>
-								</time>
-							</span>
-							<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-							<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+
 						</div>
 						<!-- /post details -->
 
-						<hr class="white-hr">
+						<hr class="black-hr">
 					</div>
 
 
@@ -75,6 +86,8 @@
 							<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
 
 							<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+
+							<hr class="black-hr">
 						</div>
 
 

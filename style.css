@@ -31,12 +31,13 @@ background: #6BA833;
 /**************************/
 
 body {
+  background-color: rgb(215, 215, 215);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 
-  color: white;
+  color: black;
   font-family: 'Source Code Pro', monaco, monospace;
 }
 
@@ -52,24 +53,24 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 
 /* unvisited link */
-a:link {
-    color: #87cdff;
+a {
+  color: #92F52F;
 }
 
 /* visited link */
-a:visited {
+/*a:visited {
     color: #87cdff;
-}
+}*/
 
 /* mouse over link */
-a:hover {
+/*a:hover {
     color: #87cdff;
-}
+}*/
 
 /* selected link */
-a:active {
+/*a:active {
     color: #87cdff;
-}
+}*/
 
 .white-hr {
   display: block;
@@ -79,6 +80,10 @@ a:active {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
+}
+
+.black-hr {
+  border-color: black;
 }
 
 .heading-background-white {
@@ -144,14 +149,19 @@ a:active {
 /*        SIDEBARS AND WIDGETS          */
 /*--------------------------------------*/
 
+.sidebar {
+  /*background-color: rgb(113, 113, 113);*/
+}
+
 .sidebar-widget {
   text-align: right;
+  padding: 10px;
 }
 
 .sidebar-widget div h3 {
   display: inline-block;
-  background-color: black;
-  color: #92f52f;
+  /*background-color: black;*/
+  color: black;
 }
 
 .sidebar-widget div ul {
@@ -168,7 +178,7 @@ a:active {
 }
 
 .sidebar-widget div ul li a {
-  color: #87cdff;
+  color: black;
 }
 
 .search-input {
@@ -201,9 +211,14 @@ a:active {
 /*--------------------------------------*/
 
 .post-background {
-  background-color: rgba(62, 62, 65, 0.75);
+  background-color: rgba(145, 145, 145, 1);
   padding: 10px;
   border-radius: 5px;
+  color: black;
+}
+
+.post-thumbnail img {
+  max-width: 100%;
 }
 
 /*--------------------------------------*/
@@ -221,7 +236,10 @@ a:active {
 }
 
 .single-post-header {
-
+  margin-top: 20px;
+  background-color: rgb(47, 47, 47);
+  padding: 10px;
+  color: white;
 }
 
 .single-post-details {
@@ -235,7 +253,7 @@ a:active {
 }
 
 .post-content {
-  /*background-color: rgba(62, 62, 62, 0.5);*/
+  /*background-color: rgb(190, 190, 190);*/
 }
 
 .post-content p img {

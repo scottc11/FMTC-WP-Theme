@@ -8,7 +8,7 @@
 			<div class="col-xs-4">
 
 				<?php get_template_part('main-sidebar'); ?>
-				<?php get_sidebar(); ?>
+				
 
 			</div>
 
