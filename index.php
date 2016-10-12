@@ -5,14 +5,14 @@
 		<section class="row">
 
 
-			<div class="col-xs-4">
+			<div class="col-xs-12 col-md-4">
 
 				<?php get_template_part('main-sidebar'); ?>
 				<?php get_sidebar(); ?>
 
 			</div>
 
-			<div class="col-xs-8">
+			<div class="col-xs-12 col-md-8">
 
 				<h1 class="col-xs-12"><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
 

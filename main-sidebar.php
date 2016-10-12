@@ -10,7 +10,9 @@
         <!-- /logo -->
 
         <div class="col-xs-12">
-          <h1 class="site-heading">FMTC</h1>
+
+          <h1 class="site-heading"><a href="<?php echo home_url(); ?>">FMTC</a></h1>
+
 
           <h3 class="">From Music To Code</h3>
 

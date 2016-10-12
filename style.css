@@ -145,6 +145,10 @@ a {
   font-family: 'Roboto Mono', monospace;
 }
 
+.site-heading a {
+  color: black;
+}
+
 /*--------------------------------------*/
 /*        SIDEBARS AND WIDGETS          */
 /*--------------------------------------*/

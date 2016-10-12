@@ -5,7 +5,7 @@
 	<!-- section -->
 	<section class="row">
 
-		<div class="col-xs-4">
+		<div class="col-xs-12 col-md-4">
 
 			<div class="">
 				<?php get_template_part('main-sidebar'); ?>
@@ -22,7 +22,7 @@
 			<article class="margin-top-20">
 
 				<!-- article -->
-				<article class="col-xs-8" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article class="col-xs-12 col-md-8" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
 					<!-- post thumbnail -->
